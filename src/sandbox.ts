@@ -39,7 +39,6 @@ user2 = {id:1, name:"Jorge"}
 
 
 //Dynamic types
-*/
 
 let a: any = 23;
 a = "Boas notas"
@@ -59,3 +58,23 @@ user = {
     id: 1, 
     name: "Osvaldo",
 }
+
+
+//Working with functin
+
+let func: Function;
+
+func = () => {
+    console.log("Hello world, again")
+}
+func()
+
+let add = (a: number, b: number, c: number = 1):number => {
+    console.log(c)
+    return a + b;
+}
+const result = add(10, 11);
+
+console.log(result)
+//
+*/

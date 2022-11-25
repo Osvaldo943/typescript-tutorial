@@ -40,15 +40,42 @@ user2 = {id:1, name:"Jorge"}
 
 
 //Dynamic types
-*/
-let a = 23;
-a = "Boas notas";
+
+let a: any = 23;
+a = "Boas notas"
 a = false;
-let mix = [];
+
+
+let mix: any[] = [];
+
 mix.push(10);
-mix.push("Osvaldo de Sousa");
-let user;
+mix.push("Osvaldo de Sousa")
+
+let user: {
+    id: any;
+    name: any;
+}
 user = {
     id: 1,
     name: "Osvaldo",
-};
+}
+
+
+//Working with functin
+
+let func: Function;
+
+func = () => {
+    console.log("Hello world, again")
+}
+func()
+
+let add = (a: number, b: number, c: number = 1):number => {
+    console.log(c)
+    return a + b;
+}
+const result = add(10, 11);
+
+console.log(result)
+//
+*/ 
