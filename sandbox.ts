@@ -1,5 +1,7 @@
+/*
 
 //explicit types
+
 let nome: string;
 let age: number;
 let isActive: boolean;
@@ -33,3 +35,29 @@ let user2: {
 }
 
 user2 = {id:1, name:"Jorge"}
+
+
+*/
+
+//Dynamic types
+
+let a: any = 23;
+a = "Boas notas"
+a = false;
+
+
+let mix: any[] = [];
+
+mix.push(10);
+mix.push("Osvaldo de Sousa")
+
+let user: {
+    id: any;
+    name: any;
+}
+user = {
+    id: 1,
+    name: "Osvaldo",
+}
+
+console.log(user)
