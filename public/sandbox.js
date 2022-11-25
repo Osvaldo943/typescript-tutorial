@@ -1,3 +1,4 @@
+"use strict";
 /*
 
 //explicit types
@@ -37,17 +38,17 @@ let user2: {
 user2 = {id:1, name:"Jorge"}
 
 
-*/
+
 //Dynamic types
-var a = 23;
+*/
+let a = 23;
 a = "Boas notas";
 a = false;
-var mix = [];
+let mix = [];
 mix.push(10);
 mix.push("Osvaldo de Sousa");
-var user;
+let user;
 user = {
     id: 1,
-    name: "Osvaldo"
+    name: "Osvaldo",
 };
-console.log(user);

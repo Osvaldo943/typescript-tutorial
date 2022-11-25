@@ -37,9 +37,9 @@ let user2: {
 user2 = {id:1, name:"Jorge"}
 
 
-*/
 
 //Dynamic types
+*/
 
 let a: any = 23;
 a = "Boas notas"
@@ -56,8 +56,6 @@ let user: {
     name: any;
 }
 user = {
-    id: 1,
+    id: 1, 
     name: "Osvaldo",
 }
-
-console.log(user)
