@@ -23,7 +23,7 @@ let invoices = [];
 invoices.push(invoiceOne);
 invoices.push(invoiceTwo);
 invoices.forEach(inv => {
-    console.log(inv.client, inv.amount, inv.details, inv.format());
+    console.log(inv.client, inv.amount, inv.format());
 });
 //
 const form = document.querySelector(".new-item-form");
