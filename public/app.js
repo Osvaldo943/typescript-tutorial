@@ -1,22 +1,9 @@
-"use strict";
 /*We can do it
 const anchor = document.querySelector("a")!;
 console.log(anchor.innerText);
 
 */
-class Invoice {
-    /*readonly client: string;
-    private details: string;
-    public amount: number;*/
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    format() {
-        return `${this.client} owes ${this.amount} for ${this.details}`;
-    }
-}
+import { Invoice } from "./classes/invoice.js";
 const invoiceOne = new Invoice("Osvaldo", "work on Osvaldo website", 200);
 const invoiceTwo = new Invoice("Mário", "work on Mário website", 200);
 let invoices = [];
