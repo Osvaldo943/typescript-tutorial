@@ -78,13 +78,21 @@ const result = add(10, 11);
 
 console.log(result)
 //
-*/
-const createUser = (user) => {
-    console.log(user.uid, "Olá", user.name);
-};
+
+
+//Using AntiAliased
+
+type StriOrNum = string | number;
+type newUserWidthName = { name: string, uid: StriOrNum }
+
+const createUser = (user: newUserWidthName) => {
+    console.log(user.uid, "Olá", user.name)
+}
 let user = {
     uid: 10,
     name: "Osvaldo",
     as: "",
-};
-createUser(user);
+}
+createUser(user)
+*/
+//DOM & Type cascating

@@ -77,7 +77,6 @@ const result = add(10, 11);
 
 console.log(result)
 //
-*/
 
 
 //Using AntiAliased
@@ -94,3 +93,7 @@ let user = {
     as: "",
 }
 createUser(user)
+*/
+
+//DOM & Type cascating
+
