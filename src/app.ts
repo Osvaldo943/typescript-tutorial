@@ -1,11 +1,43 @@
 
 /*We can do it
-const anchor = document.querySelector("a")!;
-console.log(anchor.innerText);
-
+    const anchor = document.querySelector("a")!;
+    console.log(anchor.innerText);
 */
-import {Invoice} from "./classes/invoice.js"
 
+//Interface
+interface isPerson {
+    name: string,
+    age: number,
+    speak(text: string): void;
+    spend(amount: number): number;
+}
+
+const me: isPerson = {
+    name: "Osvaldo",
+    age: 10,
+    
+    speak(text: string):void {
+        console.log(text);
+    },
+    spend(amount: 10): number {
+        console.log("I spend ", amount);
+        return amount;
+    }
+}
+
+const Func = (props: isPerson) => {
+    console.log(props.name)
+};
+Func(me)
+
+
+
+
+
+
+
+//
+import {Invoice} from "./classes/invoice.js"
 const invoiceOne = new Invoice("Osvaldo", "work on Osvaldo website", 200);
 const invoiceTwo = new Invoice("Mário", "work on Mário website", 200);
 

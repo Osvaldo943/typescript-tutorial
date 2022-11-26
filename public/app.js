@@ -1,8 +1,23 @@
 /*We can do it
-const anchor = document.querySelector("a")!;
-console.log(anchor.innerText);
-
+    const anchor = document.querySelector("a")!;
+    console.log(anchor.innerText);
 */
+const me = {
+    name: "Osvaldo",
+    age: 10,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("I spend ", amount);
+        return amount;
+    }
+};
+const Func = (props) => {
+    console.log(props.name);
+};
+Func(me);
+//
 import { Invoice } from "./classes/invoice.js";
 const invoiceOne = new Invoice("Osvaldo", "work on Osvaldo website", 200);
 const invoiceTwo = new Invoice("Mário", "work on Mário website", 200);
